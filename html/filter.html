@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="filter.css" />
+  </head>
+  <body >
+    <div class="cont" >
+    <div class="wrapper" >
+        <div id="search-container" class="filter-box">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search here.."
+            />
+            <button id="search">Search</button>
+          </div>
+
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Employment')">
+          Employment
+        </button>
+        <button class="button-value" onclick="filterProduct('Investment')">
+            Investment
+          </button>
+        <button class="button-value" onclick="filterProduct('Tech')">
+          Tech
+        </button>
+        <button class="button-value" onclick="filterProduct('Medical')">
+          Medical
+        </button>
+        <br>
+        <button class="button-value" onclick="filterProduct('Education')">
+            Education
+          </button>
+        <button class="button-value" onclick="filterProduct('Consultancy')">
+            Consultancy
+          </button>
+        <button class="button-value" onclick="filterProduct('Others')">
+            Others
+          </button>
+        
+      </div>
+      <div id="products"></div>
+    </div>
+</div>
+      
+    <!-- Script -->
+    <script src="filter.js"></script>
+  </body>
+</html>
